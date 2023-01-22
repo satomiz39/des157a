@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Open the console to see the functionality of the code.</h2>
+    
+    
+    <script>
+        //Write a program that takes a lowercase string and capitalizes the first letter of each word in the string//
+        var sentence = 'parallel lines have so much in common.';
+        var words = sentence.toLowerCase().split(' ');
+        for (var i=0; i<words.length; i++) {
+            words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+        }
+        console.log(words.join(' '));
+    </script>
+</body>
+</html>

@@ -4,60 +4,72 @@
   }
 
 main {
-    padding: 2px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-    background-color: white;
-    padding: auto;
-  }
+  display: flex;
+  justify-content:space-between;
+  padding: 10px 0px;
+  align-items: center;
+}
 
 .banner {
     background-color: #2F2F2F;
     padding-top: 8em;
     min-height: 40vh;
-    display: flex;
     position: relative;
-
 }
 
-/*box*/
-.box {
-    position: relative;
+/*cube*/
+.cube {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     height: 400px;
     transform-style: preserve-3d;
     animation: animate 16s linear infinite;
   }
 
+  @keyframes animate 
+  {
+   0%
+    {
+      transform: rotateX(-20deg) rotateY(360deg);
+    }
+    100%
+    {
+      transform: rotateX(-20deg) rotateY(0deg);
+    }
+  }
 
-  /*content menu*/
-.menu {
-    font-family: 'Poppins', sans-serif;
-    list-style-type: none;
-  }
-  .menu .content {
+
+  /* contents */
+  .contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 80px;
+    gap: 10px;
     color: rgb(29, 29, 34);
-    display: flex;
-    justify-content: space-around;
-    line-height: 2em;
-    background-color: #F8F8F8;
-    padding: 30px;
-  }
+    background-color: #F8F8F8;;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.2em;
+}
 
   ul li {
     list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
+  }
+
+  a:link {
+    text-decoration: none;
+    color: rgb(29, 29, 34);
   }
 
 footer {
+  text-align: center;
+  padding: 40px;
   background: linear-gradient(259deg, rgba(143,132,214,1) 0%, rgba(65,183,209,1) 100%);
-  margin: 0 20px;
-  padding: 20px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
+  margin: 0 40px;
 }

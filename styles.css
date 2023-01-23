@@ -10,6 +10,7 @@ body {
   margin: auto;
   display: block;
   position: relative;
+  color: #2F2F2F;
 }
 
   h2 {
@@ -169,7 +170,6 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
-    color: rgb(29, 29, 34);
     background-color: #2F2F2F;
     font-family: 'Poppins', sans-serif;
     line-height: 2.2em;
@@ -206,8 +206,20 @@ ul {
 
   a:link {
     text-decoration: none;
-    color: rgb(29, 29, 34);
+    /* color: rgb(29, 29, 34); */
   }
+
+  ul li a {
+    text-decoration: none;
+    transition: font-size 500ms ease, color 500ms ease;
+    color: #2F2F2F;
+}
+
+ul li a:hover {
+    font-size: 1.2em;
+    color: #19a3ad;
+}
+
 
   /* footer */
 footer {

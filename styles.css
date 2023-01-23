@@ -98,16 +98,16 @@ header {
       cursor: pointer;
     }
 
-  #face1 {
+  .face1 {
     --i:0;
   }
-  #face2 {
+  .face2 {
     --i:2;
   }
-  #face3 {
+  .face3 {
     --i:3;
   }
-  #face4 {
+  .face4 {
     --i:5;
   }
   

@@ -211,12 +211,19 @@ ul {
 
   ul li a {
     text-decoration: none;
-    transition: font-size 500ms ease, color 500ms ease;
-    color: #2F2F2F;
+    color: #2F2F2F;   
 }
 
-ul li a:hover {
-    font-size: 1.2em;
+li a {
+  display:block;
+  /* margin: auto; */
+  text-decoration: none;
+  transition: .3s ease-in-out .0s;
+}
+
+a:hover {
+    padding-left: 1em;
+    transform: scale(1.2);
     color: #19a3ad;
 }
   /* footer */

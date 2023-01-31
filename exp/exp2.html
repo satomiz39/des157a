@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Open the console to see the functionality of the code.</h2>
+    
+    <form>
+        <label><input type="checkBox">Yes, I'm an animal</label>
+    </form>
+    
+    <script>
+
+    var yourPet = prompt(`Type your animal from cat, dog, chicken and cow`, '')
+    var pet = ['cat', 'dog', 'chicken', 'cow'];
+
+    
+    function hello(name){
+        var greeting;
+        if(name == null || name == '') {
+            greeting = "You didn't type";
+        }
+        else {
+            greeting = `Hello ${name}, nice meeting you!`
+        }
+        return greeting;
+    }
+    hello(yourPet);
+    function randomInt( mim, max) {
+        return Math.floor ((max - min +1) * Math.random()) + min;
+    } 
+
+    console.log(hello(yourPet));
+
+    var checkbox = document.querySelector('input');
+    checkBox.setAttribute("checked", "checked");
+    
+    </script>
+</body>
+</html>

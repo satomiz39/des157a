@@ -17,6 +17,10 @@ body {
     font-weight: 600;
   }
 
+  h5 {
+    font-size: 400;
+  }
+
 header {
   display: flex;
   justify-content:space-between;
@@ -237,9 +241,41 @@ footer {
   color:  #F8F8F8;
   line-height: 1.8em;
   width: 1100px;
-  
 }
 
 footer a:link {
   color: #F8F8F8;
+}
+
+/* blog posts style */
+.blogBody {
+  background-color: #F8F8F8;
+}
+
+.blogHeader{
+  display: flex;
+  justify-content:space-between;
+  padding: 10px 0px;
+  align-items: center; 
+  max-width: 1100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #2F2F2F;
+  background-color: #F8F8F8;
+  font-size: 28px;
+}
+
+#row1 {
+padding: 20px 0px;
+display: flex;
+}
+
+.column {
+  flex: 40%;
+  line-height: 1.6em;
+}
+
+.blogFooter {
+  background: #F8F8F8;
+  color: #2F2F2F;
 }

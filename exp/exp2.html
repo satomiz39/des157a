@@ -19,10 +19,9 @@
     
     <script>
 
-    var yourPet = prompt(`Type your animal from cat, dog, chicken and cow`, '')
-    // var pet = ['cat', 'dog', 'chicken', 'cow'];
-    var h2 = document.querySelector('h2');
-    
+    var yourPet = prompt(`What's your pet?`, '')
+    var output = document.querySelector('h2');
+
     function hello(name){
         var greeting;
         if(name == null || name == '') {
@@ -38,10 +37,6 @@
         output.innerHTML = hello(yourPet);
     }
     printgreeting();
-    // hello(yourPet);
-    // function randomInt( mim, max) {
-    //     return Math.floor ((max - min +1) * Math.random()) + min;
-    // } 
 
     var checkbox = document.querySelector('input');
     checkbox.setAttribute("checked", "checked");

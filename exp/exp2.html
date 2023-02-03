@@ -10,8 +10,8 @@
 
 </head>
 <body>
-    <h1>Experiment 1</h1>
-    <h2>Open the console to see the functionality of the code.</h2>
+    <h1>Experiment 2</h1>
+    <h2></h2>
     
     <form>
         <label><input type="checkBox">Yes, I'm an animal</label>
@@ -20,8 +20,8 @@
     <script>
 
     var yourPet = prompt(`Type your animal from cat, dog, chicken and cow`, '')
-    var pet = ['cat', 'dog', 'chicken', 'cow'];
-
+    // var pet = ['cat', 'dog', 'chicken', 'cow'];
+    var h2 = document.querySelector('h2');
     
     function hello(name){
         var greeting;
@@ -33,15 +33,18 @@
         }
         return greeting;
     }
-    hello(yourPet);
-    function randomInt( mim, max) {
-        return Math.floor ((max - min +1) * Math.random()) + min;
-    } 
 
-    console.log(hello(yourPet));
+    function printgreeting(){
+        output.innerHTML = hello(yourPet);
+    }
+    printgreeting();
+    // hello(yourPet);
+    // function randomInt( mim, max) {
+    //     return Math.floor ((max - min +1) * Math.random()) + min;
+    // } 
 
     var checkbox = document.querySelector('input');
-    checkBox.setAttribute("checked", "checked");
+    checkbox.setAttribute("checked", "checked");
     
     </script>
 </body>

@@ -9,33 +9,67 @@
     <script src="script.js" defer></script>
     <title>studio1</title>
 </head>
-<body>
-    <header class="madHeader">
-    </header>
+    <body>
+      <header class="madHeader">
+      </header>
 
-<main>
-    <section>
-        <div id = row1>
-            <div class="columnLeft">
-                <h2>Find your traits</h2>
-                <form>
-                    <div class="formStyle">
-                      <label for="name">Enter your name: </label>
-                      <input type="text" name="name" id="name" required>
-                    </div>
+        <main>
+            <section class="fieldset">
+                <form id="myForm">
+                    <label for="fname">Name</label><br>
+                    <input type="text" id="fname"><br>
+        
+                    <label for="verb">Verb</label><br>
+                    <input type="text" id="verb"><br><br>
+        
+                    <label for="verb">Noun</label><br>
+                    <input type="text" id="noun1"><br><br>
+        
+                    <label for="verb">Adjective</label><br>
+                    <input type="text" id="adjective"><br><br>
+        
+                    <label for="verb">Noun</label><br>
+                    <input type="text" id="noun2"><br><br>
+        
+                    <label for="birthday">Select your birthday</label><br>
+                        <select id="birthday" name="birthday">
+                            <option value="libra">Sept 9 - Oct 10</option>
+                            <option value="Cancer">May 8 - Jun 15</option>
+                            <option value="Gemini">Mar 20 - Apr 6</option>
+                            <option value="Gemini">Mar 20 - Apr 6</option>
+                            <option value="Gemini">Mar 20 - Apr 6</option>
+                            <option value="Gemini">Mar 20 - Apr 6</option>
+                            <option value="Gemini">Mar 20 - Apr 6</option>
+                            <option value="Gemini">Mar 20 - Apr 6</option>
+                        </select>
+                        <br><br>
+                    <input type="submit" onclick="myFunction" value="Submit">
                 </form>
-            </div>
-
-            <div class="columnRight">
-                <h2>Mad <span class="">Astrology</span></h2>
-            
-            </div>
-        </div>
-    </section>
-</main>
-
-    
-</body>
+            </section>
+        
+            <section class="rightColumn">
+                <h2>Mad Astrology</h2>
+                <div>
+                    <img src="">
+                </div>
+            </section>
+ 
+            <!-- Madlibs Result
+            <section id="result" class="resultContent">
+                <article id="madlibs">
+                    <p class='madlibPara'>
+                        <span class="inputWords" id="yourName"></span>, your sign is<span class="inputWords" id="star"></span>.
+                        You are very <span class="inputWords" id="adjective"></span> at school.
+                        When you feel <span class="inputWords" id="adjective2"></span> 
+                        you do anything to find <span class="inputWords" id="noun"></span>.
+                        All qualities make <span class="inputWords" id="star"></span> a great <span class="inputWords" id="noun2"></span>.
+                    </p>
+                    <br><br>
+                    <p class='madlibPara'><a href="">Try Again</a></p>
+                </article>
+            </section> -->
+        </main> 
+    </body>
 </html>
 
 <!--

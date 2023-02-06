@@ -265,9 +265,10 @@ footer a:link {
   font-size: 28px;
 }
 
-#row1 {
+#row {
 padding: 20px 0px;
 display: flex;
+margin-bottom: 60px;
 }
 
 .column {

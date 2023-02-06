@@ -271,10 +271,18 @@ display: flex;
 margin-bottom: 60px;
 }
 
+.blog img{
+  max-width: 480px;
+  height: auto;
+  margin-right: 4.3em;
+}
+
+
 .column {
   flex: 40%;
   line-height: 1.6em;
 }
+
 
 .blogFooter {
   background: #F8F8F8;

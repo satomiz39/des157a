@@ -15,7 +15,7 @@
 
         <main>
             <section class="fieldset">
-                <form id="myForm">
+                <form id="myform">
                       
                     <div class="inputArea">
                     <label for="fname">Name</label><br>
@@ -26,16 +26,21 @@
                     <input type="text" name="verb" id="verb" required><br><br>
         
                     <label for="verb">Noun</label><br>
-                    <input type="text" name="noun" id="noun1" required><br><br>
+                    <input type="text" name="noun" id="noun" required><br><br>
         
-                    <label for="verb">Adjective</label><br>
-                    <input type="text" name="adjective" id="adjective" required><br><br>
-        
-                    <label for="verb">Noun</label><br>
+                    <label for="verb">One more noun</label><br>
                     <input type="text" name="noun2" id="noun2" required><br><br>
+
+                    <label for="verb">Adjective</label><br>
+                    <input type="text" name="adj" id="adj" required><br><br>
+
+                    <label for="verb">One more adjective</label><br>
+                    <input type="text" name="adj2" id="adj2" required><br><br>
         
                     <label for="birthday">Select your birthday</label><br>
                         <select id="birthday" name="birthday">
+                            <option value="aries">Mar 21 - Apr 19</option>
+                            <option value="aries">Mar 21 - Apr 19</option>
                             <option value="aries">Mar 21 - Apr 19</option>
                             <option value="taurus">Apr 20 - May 20</option>
                             <option value="gemini">May 21 - Jun 20</option>
@@ -44,33 +49,24 @@
                             <option value="virgo">Aug 23 - Sept 22</option>
                             <option value="libra">Sept 23 - Oct 22</option>
                             <option value="scorpio">Oct 23 - Nov 21</option>
+                            <option value="aries">Mar 21 - Apr 19</option>
                         </select>
-                        <br><br>
-                    <input type="submit" onclick="myFunction" value="Submit">
+                        <br>
+                    <input type="submit" class="open" value="Submit">
                 </form>
             </section>
-        
+
             <section class="rightColumn">
                 <h1>Mad Astrology</h1>
                 <div>
                     <img src="images/madlibs.svg" alt="madlibs image">
                 </div>
             </section>
- 
-            <!-- Madlibs Result
-            <section id="result" class="resultContent">
-                <article id="madlibs">
-                    <p class='madlibPara'>
-                        <span class="inputWords" id="yourName"></span>, your sign is<span class="inputWords" id="star"></span>.
-                        You are very <span class="inputWords" id="adjective"></span> at school.
-                        When you feel <span class="inputWords" id="adjective2"></span> 
-                        you do anything to find <span class="inputWords" id="noun"></span>.
-                        All qualities make <span class="inputWords" id="star"></span> a great <span class="inputWords" id="noun2"></span>.
-                    </p>
-                    <br><br>
-                    <p class='madlibPara'><a href="">Try Again</a></p>
+            <!-- Madlibs Result-->
+            <section id="overlay" class="hidden">
+                <article id="madlib">
                 </article>
-            </section> -->
+            </section>
         </main> 
     </body>
 </html>

@@ -36,9 +36,10 @@
           myText = `please provide a verb`;
           document.querySelector('#verb').focus();
       } else {
-          myText= `${fname}, your sign is ${birthday}.
-          You are very ${adj1} at school. When you feel ${adj2} you do anything to ${verb} for ${noun1}.
-          All qualities make ${birthday} a great ${noun2}.`; 
+          myText= `<strong>${fname}</strong>, your sign is <strong>${birthday}</strong>.
+          You are very <strong>${adj1}</strong> at school. When you feel <strong>${adj2}</strong> you do anything to <strong>${verb}</strong> for <strong>${noun1}</strong>.
+          All qualities make <strong>${birthday}</strong> a great <strong>${noun2}</strong>.
+          <p class=reset><a href="">Try again</a></p>`; 
       }
 
       madlib.innerHTML = myText;

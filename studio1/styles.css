@@ -24,15 +24,13 @@ body {
     display: block;
     position: relative;
     color: #2F2F2F;
-    background: rgb(146,224,246);
     background: linear-gradient(57deg, rgba(146,224,246,1) 0%, rgba(36,98,140,1) 51%, rgba(3,30,96,1) 100%);
     background-repeat: no-repeat;
 
 }
 
 main {
-    margin-left: 40px;
-    margin-right: 40px;
+    /* margin: 0px, 30px; */
     font-weight: 400;
     position: relative;
     display: flex;
@@ -46,8 +44,8 @@ section {
 }
 
 section .rightColumn {
-  padding: 0px 60px;
-  margin-top: 0px;
+  padding: 0px 40px 0px 20px;
+  margin: 0px;
 }
 
 input[type="text"] {
@@ -74,6 +72,7 @@ input[type="text"]:focus {
   padding: 2.4em;
   line-height: 1.2em;
   position: relative;
+  margin-left: 100px;
 }
 
 select {
@@ -107,11 +106,12 @@ input[type=submit] {
 }
 
 img {
-  width: 580px;
+  width: 560px;
   height: auto;
   overflow: hidden;
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
+  margin: 0;
 }
 
 .hidden {
@@ -127,10 +127,10 @@ img {
 #overlay{
   position: absolute;
   /* background-color: rgba(0,0,0,0.5); */
-  top: 0;
+  top: 100px;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   transition-property: opacity, visibility;
   transition-duration: 1s;
   transition-timing-function: ease;
@@ -138,19 +138,18 @@ img {
 
 #overlay article {
   box-sizing: border-box;
-  background-color:rgba(0,0,0,0.1);
-  padding: 20px;
-  margin-right: 10px;
-  width: 30vw;
+  background-color:rgba(0,0,0,0);
+  padding: 20px 40px 20px 40px ;
+  width: 26vw;
   height: 70vh;
   position: absolute;
   top: 5%;
   left: 5%;
   color: #D6D9DC;
   border-radius: 10px;
-  font-size: 26px;
+  font-size: 24px;
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6em;
+  line-height: 1.7em;
   /* transition-property: opacity, visibility;
   /* transition-duration: 2s; */
   transition-timing-function: ease;
@@ -160,6 +159,7 @@ img {
   animation-iteration-count: 1;
 }
 
+
 @keyframes fadeInAnimation {
   0% {
       opacity: 0;
@@ -167,4 +167,10 @@ img {
   100% {
       opacity: 1;
   }
+}
+
+.reset a {
+  font-size: medium;
+  color:#2a0a31;
+  text-decoration: none;
 }

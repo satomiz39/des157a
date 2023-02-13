@@ -4,8 +4,16 @@
   }
 
 h1 {
-  font-size: 40px;
+  font-size: 64px;
+  color: aliceblue;
+  margin-top: 0px;
+  padding-left: 60px;
   }
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -16,7 +24,8 @@ body {
     display: block;
     position: relative;
     color: #2F2F2F;
-    background: linear-gradient(57deg, rgba(143,132,214,1) 6%, rgba(99,197,228,1) 46%, rgba(71,169,215,1) 70%, rgba(51,89,196,1) 100%);
+    background: rgb(146,224,246);
+    background: linear-gradient(57deg, rgba(146,224,246,1) 0%, rgba(36,98,140,1) 51%, rgba(3,30,96,1) 100%);
     background-repeat: no-repeat;
 
 }
@@ -31,13 +40,14 @@ main {
 }
 
 section {
-  margin: 20px;
+  margin: 10px;
   padding: 10px 30px;
   display: block;
 }
 
-.rightColumn {
-  padding: 0 60px;
+section .rightColumn {
+  padding: 0px 60px;
+  margin-top: 0px;
 }
 
 input[type="text"] {
@@ -54,7 +64,7 @@ input[type="text"]:focus {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.fieldset{
+.homeBase{
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
   border-radius: 12px;
@@ -105,7 +115,7 @@ img {
 }
 
 .hidden {
-  visibility: visible;
+  visibility: hidden;
   opacity:0;
 }
 
@@ -116,7 +126,7 @@ img {
 
 #overlay{
   position: absolute;
-  background-color: rgba(0,0,0,0.5);
+  /* background-color: rgba(0,0,0,0.5); */
   top: 0;
   left: 0;
   width: 100vw;
@@ -128,14 +138,33 @@ img {
 
 #overlay article {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color:rgba(0,0,0,0.1);
   padding: 20px;
-  width: 50vw;
-  height: 80vh;
+  margin-right: 10px;
+  width: 30vw;
+  height: 70vh;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transition-property: opacity, visibility;
-  transition-duration: 1s;
+  top: 5%;
+  left: 5%;
+  color: #D6D9DC;
+  border-radius: 10px;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6em;
+  /* transition-property: opacity, visibility;
+  /* transition-duration: 2s; */
   transition-timing-function: ease;
+  /* animation-duration: 1s; */
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }

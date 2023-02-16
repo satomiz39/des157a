@@ -4,7 +4,7 @@
 
   const myform = document.getElementById('myform');
   const madlib = document.querySelector('#madlib');
-  let textSize = document.querySelector('#frame');
+
   
 
 

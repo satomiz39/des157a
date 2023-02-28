@@ -1,5 +1,6 @@
 (function(){
   'use strict';
+  console.log(reading.js);
 
   window.addEventListener('load', function(){
     const sections = document.querySelectorAll('section');

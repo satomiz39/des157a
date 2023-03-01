@@ -1,6 +1,5 @@
 (function(){
   'use strict';
-  console.log(reading.js);
 
   window.addEventListener('load', function(){
     const sections = document.querySelectorAll('section');
@@ -10,12 +9,11 @@
     const parachute = document.querySelector('#parachute');
     const hiker = document.querySelector('#hiker');
     const sectionHeight = document.querySelector('section').offsetHeight;
+    const para1 = document.querySelector('#para1')
     
     sections.forEach(function(section){
           sectionTops.push(Math.floor(section.getBoundingClientRect().top) + window.pageYOffset);
     });
-
-    
 
     window.addEventListener('scroll', function(){
     documentTop = window.pageYOffset;
@@ -44,7 +42,6 @@
         function moveParachute(){
           // create position for parachute based on the scrollY position - height of element; change values for different speeds of movement         
           const newPosition = (window.scrollY * 2) - 200;
-          var modal = document.getElementById('myModal');
 
           // Set the element's top property to the new position
           parachute.style.top = `${newPosition}px`;
@@ -52,10 +49,10 @@
           // At about 70% of section, fade out parachute
           if (newPosition > sectionHeight * .7){
             parachute.className = 'fadeout';
-            modal.style.display = 'block';
-
+            para1.className = 'movein';
           } else {
             parachute.className = 'fadein'
+            para1.className = 'moveout';
           }
         }
 
@@ -73,15 +70,14 @@
 
         function moveDiver(){
           // the multiplier value was trial and error; it should be at least 2 for section section height
-          if (window.scrollY > sectionHeight * 2.4){
+          if (window.scrollY > sectionHeight * 2.25){
             console.log('trigger');
             diver.className='showdiver';
           } else {
             diver.className='hidediver';
           }
-        }
 
-      
+        }
 
 
       }) // end window scroll function

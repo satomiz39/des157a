@@ -10,6 +10,9 @@
     const hiker = document.querySelector('#hiker');
     const sectionHeight = document.querySelector('section').offsetHeight;
     const para1 = document.querySelector('#para1')
+    const mountain = document.querySelector('#mountain');
+   const mountainTop = mountain.getBoundingClientRect().top;
+   console.log(mountainTop);
     
     sections.forEach(function(section){
           sectionTops.push(Math.floor(section.getBoundingClientRect().top) + window.pageYOffset);
@@ -47,12 +50,12 @@
           parachute.style.top = `${newPosition}px`;
 
           // At about 70% of section, fade out parachute
-          if (newPosition > sectionHeight * .7){
+          if (newPosition > sectionHeight * .6){
             parachute.className = 'fadeout';
-            para1.className = 'movein';
+            para1.className = 'fadeout moveoutleft';
           } else {
             parachute.className = 'fadein'
-            para1.className = 'moveout';
+            para1.className = 'fadein moveinleft';
           }
         }
 

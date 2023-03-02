@@ -8,8 +8,11 @@
     let counter = 0;
     const parachute = document.querySelector('#parachute');
     const hiker = document.querySelector('#hiker');
+    const diver = document.querySelector('#diver');
     const sectionHeight = document.querySelector('section').offsetHeight;
     const para1 = document.querySelector('#para1')
+    const para2 = document.querySelector('#para2')
+    const para3 = document.querySelector('#para3')
     const mountain = document.querySelector('#mountain');
    const mountainTop = mountain.getBoundingClientRect().top;
    console.log(mountainTop);
@@ -53,9 +56,11 @@
           if (newPosition > sectionHeight * .6){
             parachute.className = 'fadeout';
             para1.className = 'fadeout moveoutleft';
+          
           } else {
             parachute.className = 'fadein'
             para1.className = 'fadein moveinleft';
+            
           }
         }
 
@@ -66,18 +71,21 @@
           // the multiplier value was trial and error; it should be at least 2 for section section height
           if (newPosition > sectionHeight * 2.2){
             hiker.className='movein';
+            para2.className = 'fadein moveoutleft';
           } else {
             hiker.className='moveout';
+            para2.className = 'fadeout moveinleft';
           }
         }
 
         function moveDiver(){
           // the multiplier value was trial and error; it should be at least 2 for section section height
           if (window.scrollY > sectionHeight * 2.25){
-            console.log('trigger');
             diver.className='showdiver';
+            para3.className='showdiver';
           } else {
             diver.className='hidediver';
+            par3.className='hidediver';
           }
 
         }

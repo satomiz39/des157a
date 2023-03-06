@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  min-width: 900px;
+  margin: auto;
+  display: block;
+  position: relative;
+  color: #2F2F2F;
+}
+
+  h2 {
+    font-weight: 600;
+  }

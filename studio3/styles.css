@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+    position: relative;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 100px;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+button { 
+    padding: 10px;
+    background-color: #1FC0D4;
+    color: #eaeaea;
+    border-radius: 6px;
+    border-color: #1FC0D4;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol, #score {
+    background-color: aliceblue;
+}
+
+#game {
+    background-color:#eaeaea;
+    
+}
+#actions {
+ background-color: red;
+ display: flex;
+ align-items: center;
+
+}
+
+#quit {
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 80%;
+}
+
+#roll {
+    position: absolute;
+    left: 50%;
+}

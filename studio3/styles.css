@@ -129,6 +129,16 @@ button {
     color: #eaeaea;
 }
 
+#turn2 {
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-radius: 6px;
+    max-width: 160px;
+    background-color: #5948d7;
+    font-size: 20px;
+    color: #eaeaea;
+}
+
 #game {
     line-height: 65px;
     padding-left: 20px;

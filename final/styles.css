@@ -11,8 +11,39 @@ body {
   display: block;
   position: relative;
   color: #2F2F2F;
+  background-image: url("img/paper.jpg");
+}
+
+.briefHeader {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   h2 {
     font-weight: 600;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section article {
+    width: 900px;
+    height: 600px;
+    line-height: 2em;
+    padding: 30px;
+  }
+
+  p {
+    padding: 10px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

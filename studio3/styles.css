@@ -7,65 +7,130 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
-    padding: 50px;
     line-height: 1.5em;
     position: relative;
 }
 
+/*text styles*/
 header {
     text-align: center;
 }
-
 h1 {
     font-family: 'Londrina Shadow', cursive;
     font-size: 100px;
-    padding: 30px;
+    padding: 10px;
 }
-
 h2 {
     margin-bottom: 1em;
 }
-
 p{
     font-family: 'Poppins', sans-serif;
 }
 
-
+/*Button & game control*/
 button { 
     padding: 10px;
     background-color: #1FC0D4;
-    color: #eaeaea;
+    color: white;
     border-radius: 6px;
-    border-color: #1FC0D4;
-}
-
-div {
-    padding: 20px;
+    background-color:  #1FC0D4;
 }
 
 #gamecontrol, #score {
-    background-color: aliceblue;
+    /* background-color: yellow; */
+    max-width: 500px;
+    padding: 30px;
 }
 
-#game {
-    background-color:#eaeaea;
-    
+#gamecontrol, #startgame {
+   background-color: #1FC0D4;
+   position: absolute;
+   left: 40%;
+   min-width: 160px;
+   border-color: transparent;
 }
+
 #actions {
- background-color: red;
- display: flex;
- align-items: center;
-
+ position: absolute;
+ left: 41%;
 }
 
-#quit {
+#gamecontrol, #quit {
     background-color: white;
     color: black;
-    position: absolute;
-    left: 80%;
+    padding: 10px;
+    margin-top: 50px;
+    min-width: 50px;
 }
 
 #roll {
-    position: absolute;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    left: 50%; */
+    padding: 20px;
+    min-width: 180px;
+    border-color: transparent;
+}
+
+#players {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.player {
+    position: relative;
+    padding: 20px 20px;
+}
+
+.player img{
+    width: 80%;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    padding: 1em;  
+}
+
+.score {
+    padding: 1em;
+    margin: 1em;
+    background-color: #2097F6;
+    width: 100px;
+    height: 80px;
+    border-radius: 6px;
+    color: #eaeaea;
+    text-align: center;
+    font-size: 30px;
+}
+
+#dice {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#playerTurn{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 160px;
+  padding-right: 240px;
+}
+
+#turn1 {
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-radius: 6px;
+    max-width: 160px;
+    background-color: #5948d7;
+    font-size: 20px;
+    color: #eaeaea;
+}
+
+#game {
+    line-height: 65px;
+    padding-left: 20px;
+    text-align: center;
 }

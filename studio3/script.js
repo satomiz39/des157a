@@ -12,7 +12,22 @@
 	const gameControl = document.getElementById('gamecontrol');
 	const game = document.getElementById('game');
 	const score = document.getElementById('score');
+	const score1 = document.getElementById("score1");
+    const score2 = document.getElementById("score2");
 	const actionArea = document.getElementById('actions');
+
+	// variable for the element, then for the sound
+	const beepBtn = document.getElementById('startgame');
+    const beepSound = new Audio('sounds/beep.mp3');
+	const diceSound = new Audio('sounds/bubble.mp3');
+	const winSound = new Audio('sounds/windoot.mp3');
+
+
+	//sound plays when the mousebutton is down
+	beepBtn.addEventListener('mousedown', function () {
+		beepSound.play();
+	});
+
 
 	const gameData = {
 		dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
@@ -45,7 +60,7 @@
 		game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
 		actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
 		document.getElementById('roll').addEventListener('click', function(){
-
+			diceSound.play();
 			throwDice();
 
 		});
@@ -59,6 +74,7 @@
 		game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> 
 							<img src="${gameData.dice[gameData.roll2-1]}">`;
 		gameData.rollSum = gameData.roll1 + gameData.roll2;
+
 
 		// if two 1's are rolled...
 		if( gameData.rollSum === 2 ){ 
@@ -92,10 +108,9 @@
 				gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 				setUpTurn();
 			});
-
+			
+        }
 			checkWinningCondition();
-		}
-
 	}
 
 	function checkWinningCondition() {
@@ -103,17 +118,20 @@
 			score.innerHTML = `<h2>${gameData.players[gameData.index]} 
 			wins with ${gameData.score[gameData.index]} points!</h2>`;
 
+			winSound.play()
+
 			actionArea.innerHTML = '';
 			document.getElementById('quit').innerHTML = 'Play again?';
+
 		} else {
 			// show current score...
 			showCurrentScore();
 		}
 	}
 
+	// updates the HTML with the current scores
 	function showCurrentScore() {
-		score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}
-		${gameData.score[0]}</strong> and <strong>${gameData.players[1]} 
-		${gameData.score[1]}</strong></p>`;
+		score1.innerHTML = `${gameData.score[0]}`;
+		score2.innerHTML = `${gameData.score[1]}`;
 	}
 }());

@@ -19,24 +19,37 @@
     </header>
  
         <main>
-                <section>
-            
-                </section>
-            
-            
-            <div id="game">
-                <div id="fish"></div>
+            <div id="players">
+                <div id="player1" class="player">               
+                    <img src="images/fish1.png" alt="fish 1">          
+                </div>
+
+                <div id="game"></div>
+                <div id="dice"></div>
+
+                <div id="player2" class="player">
+                    <img src="images/fish2.png" alt="fish 2">       
+               </div>              
             </div>
-            <div id="score"></div>
+            <div id ="playerTurn">
+                <p id="turn1" class="turnStatus">Player 1</p>    
+                <p id="turn2" class="turnStatus">Player 2</p>
+            </div>
+            <section id="scores">
+                <p id="score1" class="score">0</p>
+               <p id="score2" class="score">0</p>
+            </section>
+                     
             <div id="actions"></div>
-        
+            <div id="score"></div>
 
             <div id="gamecontrol">
-                <h2>Let's Fishing</h2>
                 <button id="startgame">Start the Game</button>
             </div>
         </main>
-    
-    
+
+    <footer>
+        <p><a href="sources.html">Sound Sources</a></p>
+    </footer> 
 </body>
 </html>

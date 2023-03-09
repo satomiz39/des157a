@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>studio1</title>
+</head>
+    <body>
+      <header class="madHeader">
+      </header>
+
+        <main>
+            <section class="homeBase">
+                <form id="myform">
+                      
+                    <div class="inputArea">
+                    <label for="fname">Name</label><br>
+                    <input type="text" name="fname" id="fname" required><br><br>
+                    </div>
+        
+                    <label for="verb" >Verb</label><br>
+                    <input type="text" name="verb" id="verb" required><br><br>
+        
+                    <label for="noun1">Noun</label><br>
+                    <input type="text" name="noun" id="noun1" required><br><br>
+        
+                    <label for="adverb">Adverb</label><br>
+                    <input type="text" name="adverb" id="adverb" required><br><br>
+
+                    <label for="adj1">A plural noun</label><br>
+                    <input type="text" name="plural" id="plural" required><br><br>
+
+        
+                    <label for="birthday">Select your birthday</label><br>
+                        <select id="birthday" name="birthday">
+                            <option value="Aquarius">Jan 20 - Feb 18</option>
+                            <option value="Pisces">Feb 19 - Mar 20</option>
+                            <option value="Aries">Mar 21 - Apr 19</option>
+                            <option value="Taurus">Apr 20 - May 20</option>
+                            <option value="Gemini">May 21 - Jun 20</option>
+                            <option value="Cancer">Jun 21 - Jul 22</option>
+                            <option value="Leo">Jul 23 - Aug 22</option>
+                            <option value="Virgo">Aug 23 - Sept 22</option>
+                            <option value="Libra">Sept 23 - Oct 22</option>
+                            <option value="Scorpio">Oct 23 - Nov 21</option>
+                            <option value="Sagittarius">Nov 22 - Dec 21</option>
+                            <option value="Capricorn">Dec 22 - Jan 19</option>
+                        </select>
+                        <br>
+                    <input type="submit" class="open" value="Submit">
+                </form>
+            </section>
+
+            <section class="rightColumn">
+                <h1>MAD <span class="cursive">Astrology</span></h1>
+                <div>
+                    <img src="images/baseface.png" alt="madlibs image">
+                </div>
+            </section>
+            <!-- Madlibs Result-->
+            <section id="overlay" class="hidden">
+                <article id="madlib">
+                </article>
+            </section>
+        </main> 
+    </body>
+</html>
+
+<!--
+    section intro - main page
+    section input - 
+    section output - you might want to just change the section of the main page or create new html
+-->

@@ -60,7 +60,7 @@
 		game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
 		actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
 		document.getElementById('roll').addEventListener('click', function(){
-			diceSound.play();
+			
 			throwDice();
 
 		});
@@ -75,6 +75,7 @@
 							<img src="${gameData.dice[gameData.roll2-1]}">`;
 		gameData.rollSum = gameData.roll1 + gameData.roll2;
 
+		diceSound.play();
 
 		// if two 1's are rolled...
 		if( gameData.rollSum === 2 ){ 
@@ -88,7 +89,7 @@
 		// if either die is a 1...
 		else if(gameData.roll1 === 1 || gameData.roll2 === 1){ 
 			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-			game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to  ${
+			game.innerHTML += `<p>Switching to  ${
 				gameData.players[gameData.index]
 			}</p>`;
 			setTimeout(setUpTurn, 2000);

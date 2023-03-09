@@ -22,8 +22,9 @@ h1 {
 }
 h2 {
     margin-bottom: 1em;
+    text-align: center;
 }
-p{
+p {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -34,20 +35,19 @@ button {
     color: white;
     border-radius: 6px;
     background-color:  #1FC0D4;
+    margin-top: 10px;
 }
 
-#gamecontrol, #score {
-    /* background-color: yellow; */
-    max-width: 500px;
-    padding: 30px;
-}
+/* #gamecontrol, #score {
+    background-color: yellow;
+    /* max-width: 500px; */
+    /* padding: 10px; 
+} */
 
 #gamecontrol, #startgame {
    background-color: #1FC0D4;
-   position: absolute;
-   left: 40%;
-   min-width: 160px;
    border-color: transparent;
+   text-align: center;
 }
 
 #actions {
@@ -58,34 +58,30 @@ button {
 #gamecontrol, #quit {
     background-color: white;
     color: black;
-    padding: 10px;
-    margin-top: 50px;
-    min-width: 50px;
+    padding: 12px;
+    margin-top: 32px;
+
 }
 
 #roll {
-    display: flex;
-    justify-content: center;
-    /* position: absolute;
-    left: 50%; */
-    padding: 20px;
-    min-width: 180px;
+    text-align: center;
+    padding: 10px;
     border-color: transparent;
 }
 
 #players {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .player {
     position: relative;
-    padding: 20px 20px;
+    padding: 20px 30px;
 }
 
 .player img{
-    width: 80%;
+    width: 70%;
 }
 
 #scores {
@@ -99,7 +95,7 @@ button {
     margin: 1em;
     background-color: #2097F6;
     width: 100px;
-    height: 80px;
+    /* height: 80px; */
     border-radius: 6px;
     color: #eaeaea;
     text-align: center;
@@ -123,7 +119,6 @@ button {
     padding: 14px 20px;
     border-radius: 6px;
     border-radius: 6px;
-    max-width: 160px;
     background-color: #5948d7;
     font-size: 20px;
     color: #eaeaea;
@@ -133,7 +128,6 @@ button {
     padding: 14px 20px;
     border-radius: 6px;
     border-radius: 6px;
-    max-width: 160px;
     background-color: #5948d7;
     font-size: 20px;
     color: #eaeaea;
@@ -141,6 +135,20 @@ button {
 
 #game {
     line-height: 65px;
-    padding-left: 20px;
+    padding-left: 50px;
     text-align: center;
+}
+
+footer {
+    bottom: 0;
+    margin-left: 43%;
+    margin-top: 50px;
+}
+
+#rollagain{
+ border-color: transparent;
+}
+
+#pass{
+    border-color: transparent;
 }

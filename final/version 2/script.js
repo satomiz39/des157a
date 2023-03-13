@@ -43,13 +43,14 @@
           Try not to take this <strong>${adverb}</strong>.
           <p class=reset><a href=""><strong>Try again</strong></a></p>`; 
 
-          var img = document.createElement("img");
-          img.src = "images/taurus.png";
-          document.body.appendChild(img);
+        
       }
 
       madlib.innerHTML = myText;
       document.getElementById('overlay').className = 'showing';
+      document.getElementById('image2').className = 'showing';
+      document.getElementById('image1').className = 'hidden';
+      document.getElementById('headline').className = 'hidden';
   })
 
   /*showing a new image*/

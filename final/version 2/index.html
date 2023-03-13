@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,11 +22,10 @@
     <title>studio1</title>
 </head>
     <body>
-      <header class="madHeader">
-      </header>
-
+      
         <main>
             <section class="homeBase">
+                
                 <form id="myform">
                       
                     <div class="inputArea">
@@ -65,11 +66,11 @@
                 </form>
             </section>
 
-            <section class="rightColumn">
-                <h1>MAD <span class="cursive">Astrology</span></h1>
-                <div>
-                    <img src="images/baseface.png" alt="madlibs image">
-                    <img src="images/" id="image2" class="hidden">
+            <section id="rightColumn" class="rightColumn">
+                <div>                 
+                        <h2 id = "headline">MAD Horoscope</h2>
+                    <img src="images/baseface.png" id="image1" alt="madlibs image">
+                    <img src="images/aries.png" id="image2" class="hidden">
                 </div>
             </section>
             <!-- Madlibs Result-->
@@ -77,7 +78,28 @@
                 <article id="madlib">
                 </article>
             </section>
-        </main> 
+
+            <!--Star Animation-->  
+            <canvas id="myCanvas"></canvas>	
+            <section>
+                <div class="stars-container">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <div class="circle">
+                    <div class="text">Mad Horoscope</div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
 

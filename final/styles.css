@@ -21,29 +21,6 @@ body {
   justify-content: center;
 }
 
-.usertestHeader {
-  color: rgb(239, 239, 244);
-  padding-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 24px;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.usertestBody{
-  background-image: url("img/usertest.png");
-}
-
-.usertestArticle {
-  padding: 1.2em;
-  background-color:rgba(16, 29, 36, 0.8);
-  color: white;
-  width: 56vw;
-  height:67vh;
-  margin-bottom: 1em;
-}
 
   h2 {
     font-weight: 600;
@@ -70,4 +47,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .usertestHeader {
+    color: rgb(239, 239, 244);
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .usertestBody{
+    background-image: url("img/usertest.png");
+    
+  }
+  
+  .usertestArticle {
+    padding: 1.2em;
+    background-color:rgba(16, 29, 36, 0.9);
+    color: white;
+    width: 56vw;
+    height: auto;
+    margin-bottom: 1em;
+    border-radius: 4px;
+  }  
+
+  .usertestFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+  }
+
+  .usertestFooter a {
+    color: aliceblue;
   }

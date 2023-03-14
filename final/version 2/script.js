@@ -4,6 +4,7 @@
 
   myform.addEventListener('submit', function(event){
       event.preventDefault();
+      console.log('submitting myform')
       document.getElementsByClassName('homeBase')[0].className = 'hidden';
       const fname = document.querySelector('#fname').value;
       const verb = document.querySelector('#verb').value;
@@ -11,7 +12,10 @@
       const adverb = document.querySelector('#adverb').value;
       const plural = document.querySelector('#plural').value;
       const birthday = document.querySelector('#birthday').value;
-      
+
+      console.log(birthday);
+      const image1=document.querySelector('#image1');
+      image1.src=`images/${birthday}.gif`;
       
       let myText;
       if(fname== ''){
@@ -41,8 +45,6 @@
 
       madlib.innerHTML = myText;
       document.getElementById('overlay').className = 'showing';
-      document.getElementById('aries').className = 'showing';
-      document.getElementById('image1').className = 'hidden';
       document.getElementById('headline').className = 'hidden';
   })
 
@@ -67,45 +69,23 @@
     }
   };
 
-
-//   birthdayInput.addEventListener('submit', function(event){
-//     event.preventDefault();
-//     document.getElementsByClassName('rightColumn')[0].className = 'hidden';
-//   const birthdayImage = document.getElementById("birthday-image");
-
-//   let imageSource = "";
-
-//   // Check the birthday value and set the image source accordingly
-//   if (birthdayValue === "Aries") {
-//     imageSource = "images/aries.gif";
-//   } else if (birthdayValue === "Taurus") {
-//     imageSource = "images/taurus.gif";
-//   } else {
-//     // Use a default image if no match is found
-//     imageSource = "images/baseface.png";
-//   }
-
-//   birthdayImage.src = imageSource;
-// });
-
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+let btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.addEventListener('click', function(){
   modal.style.display = "none";
-}
+})
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

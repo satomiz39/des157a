@@ -2,12 +2,6 @@
   'use strict';
   console.log('reading.js');
 
-  const myform = document.getElementById('myform');
-  const madlib = document.querySelector('#madlib');
-
-  
-
-
   myform.addEventListener('submit', function(event){
       event.preventDefault();
       document.getElementsByClassName('homeBase')[0].className = 'hidden';
@@ -42,13 +36,12 @@
           is likely to <strong>${verb}</strong>, and you may have absolutely no understanding of why they're there. 
           Try not to take this <strong>${adverb}</strong>.
           <p class=reset><a href=""><strong>Try again</strong></a></p>`; 
-
         
       }
 
       madlib.innerHTML = myText;
       document.getElementById('overlay').className = 'showing';
-      document.getElementById('image2').className = 'showing';
+      document.getElementById('aries').className = 'showing';
       document.getElementById('image1').className = 'hidden';
       document.getElementById('headline').className = 'hidden';
   })
@@ -74,5 +67,51 @@
     }
   };
 
+
+//   birthdayInput.addEventListener('submit', function(event){
+//     event.preventDefault();
+//     document.getElementsByClassName('rightColumn')[0].className = 'hidden';
+//   const birthdayImage = document.getElementById("birthday-image");
+
+//   let imageSource = "";
+
+//   // Check the birthday value and set the image source accordingly
+//   if (birthdayValue === "Aries") {
+//     imageSource = "images/aries.gif";
+//   } else if (birthdayValue === "Taurus") {
+//     imageSource = "images/taurus.gif";
+//   } else {
+//     // Use a default image if no match is found
+//     imageSource = "images/baseface.png";
+//   }
+
+//   birthdayImage.src = imageSource;
+// });
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
   }())

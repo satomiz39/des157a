@@ -22,12 +22,28 @@
     <title>studio1</title>
 </head>
     <body>
-      
+     
         <main>
+             <!--Info-->
+      <header>
+        <a href="#" class="open" id="myBtn"><img src="images/info.png" alt="info"></a>
+     </header>
+
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+     
+       <!-- Modal content -->
+       <div class="modal-content">
+            <p>Hey there, Welcome to Mad Horoscope! 
+            Start putting words as each label indicates, and select your birthday from the dropdown menu. Once you’re done click the submit button to see your today’s horoscope result. 
+            </p>
+            <span class="close">close</span>
+       </div>
+     </div>
+
+<!--content-->
             <section class="homeBase">
-                
-                <form id="myform">
-                      
+                <form id="myform">    
                     <div class="inputArea">
                     <label for="fname">Name</label><br>
                     <input type="text" name="fname" id="fname" required><br><br>
@@ -66,45 +82,35 @@
                 </form>
             </section>
 
-            <section id="rightColumn" class="rightColumn">
-                <div>                 
-                        <h2 id = "headline">MAD Horoscope</h2>
+            <section id="rightColumn" class="rightColumn">               
+                    <h2 id = "headline">MAD Horoscope</h2>
                     <img src="images/baseface.png" id="image1" alt="madlibs image">
-                    <img src="images/aries.png" id="image2" class="hidden">
-                </div>
+                    <img src="" id="birthday-image" alt="Birthday Image" class="hidden">
+                    <img src="images/aries.gif" id="aries" class="hidden">
+                    <img src="images/taurus.gif" id="taurus" class="hidden">
             </section>
             <!-- Madlibs Result-->
             <section id="overlay" class="hidden">
                 <article id="madlib">
                 </article>
             </section>
-
-            <!--Star Animation-->  
-            <canvas id="myCanvas"></canvas>	
-            <section>
-                <div class="stars-container">
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <div class="circle">
-                    <div class="text">Mad Horoscope</div>
-                </div>
-            </section>
+             <!--Star Animation-->  
+             <canvas id="myCanvas"></canvas>	
+             <section>
+                 <div class="stars-container">
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                 </div>
+             </section>
         </main>
     </body>
 </html>
-
-<!--
-    section intro - main page
-    section input - 
-    section output - you might want to just change the section of the main page or create new html
--->

@@ -85,3 +85,7 @@ body {
   .usertestFooter a {
     color: aliceblue;
   }
+
+  .usertestImages img{
+    width: 50%;
+  }

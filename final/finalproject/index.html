@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>studio1</title>
+</head>
+    <body>
+     
+        <main>
+             <!--Info-->
+      <header>
+        <a href="#" class="open" id="myBtn"><img src="images/info.png" alt="info"></a>
+     </header>
+
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+     
+       <!-- Modal content -->
+       <div class="modal-content">
+            <p>Hey there, Welcome to Mad Horoscope! 
+            Start putting words as each label indicates, and select your birthday from the dropdown menu. Once you’re done click the submit button to see your today’s horoscope result. 
+            </p>
+            <span class="close">close</span>
+       </div>
+
+     </div>
+
+<!--content-->
+            <section class="homeBase">
+                <form id="myform">    
+                    <div class="inputArea">
+                    <label for="fname">Name</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="Your name.." required><br><br>
+                    </div>
+        
+                    <label for="verb" >Verb</label><br>
+                    <input type="text" name="verb" id="verb" placeholder="e.g. run, eat" required><br><br>
+        
+                    <label for="noun1">Noun</label><br>
+                    <input type="text" name="noun" id="noun1" placeholder="e.g. rock, cake"required><br><br>
+        
+                    <label for="adverb">Adverb</label><br>
+                    <input type="text" name="adverb" id="adverb" placeholder="e.g. slowly, rarely, daily " required><br><br>
+
+                    <label for="plural">A plural noun</label><br>
+                    <input type="text" name="plural" id="plural" placeholder="e.g. tables, books" required><br><br>
+
+        
+                    <label for="birthday">Select your birthday</label><br>
+                        <select id="birthday" name="birthday">
+                            <option value="">----</option>
+                            <option value="aquarius">Jan 20 - Feb 18</option>
+                            <option value="pisces">Feb 19 - Mar 20</option>
+                            <option value="aries">Mar 21 - Apr 19</option>
+                            <option value="taurus">Apr 20 - May 20</option>
+                            <option value="gemini">May 21 - Jun 20</option>
+                            <option value="cancer">Jun 21 - Jul 22</option>
+                            <option value="leo">Jul 23 - Aug 22</option>
+                            <option value="virgo">Aug 23 - Sept 22</option>
+                            <option value="libra">Sept 23 - Oct 22</option>
+                            <option value="scorpio">Oct 23 - Nov 21</option>
+                            <option value="sagittarius">Nov 22 - Dec 21</option>
+                            <option value="capricorn">Dec 22 - Jan 19</option>
+                        </select>
+                        <br>
+                    <input type="submit" class="open" value="Submit">
+                </form>
+            </section>
+
+            <section id="rightColumn" class="rightColumn">               
+                    <h2 id = "headline">MAD Horoscope</h2>
+                    <img src="images/baseface.png" id="image1" alt="madlibs image">               
+            </section>
+            <!-- Madlibs Result-->
+            <section id="overlay" class="hidden">
+                <article id="madlib">
+                </article>
+            </section>
+             <!--Star Animation-->  
+             <canvas id="myCanvas"></canvas>	
+             <section>
+                 <div class="stars-container">
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                     <div class="star"></div>
+                 </div>
+             </section>
+        </main>
+    </body>
+</html>
